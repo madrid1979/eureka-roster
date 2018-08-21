@@ -1,8 +1,15 @@
-$dark-color : #6b2ae4;
+@import "settings";
+@import "foundation";
+@include foundation-everything;
+
+@import "partials/header";
+
+
+/** OVERRIDES **/
 
 body {
-  background: $dark-color;
+  background: $white;
 }
 h1 {
-	color: #ffffff;
+	color: $light-gray;
 }
