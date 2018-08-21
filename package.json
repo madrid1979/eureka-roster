@@ -9,7 +9,9 @@
   "author": "Tom Madrid",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.5.0",
+    "gulp-sass": "^4.0.1"
   },
   "dependencies": {
     "foundation-sites": "^6.5.0-rc.2"
