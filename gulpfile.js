@@ -25,16 +25,19 @@ gulp.task('sass', function(){
 
 gulp.task('browserSync', function() {
   browserSync.init({
-      proxy: 'eureka.dev'
+      proxy: 'eureka.dev',
   })
 });
 
-var watch = function() {
+gulp.task('watch', ['browserSync', 'sass'], function () {
   gulp.watch('./sass/**/*.scss', ['sass']);
   gulp.watch('./public/*.html', browserSync.reload);
   //gulp.watch('templates/*.php', browserSync.reload);
   //gulp.watch('parts/*.php', browserSync.reload);
-}
-gulp.task('watch', gulp.series(gulp.parallel('browserSync', 'sass'), watch));
+});
 
-gulp.task('default', gulp.series(gulp.parallel('watch', 'sass')));
+gulp.task('build', ['sass'], function() {
+  console.log('Gettin\' SASSY! Please hold.');
+});
+
+gulp.task('default', ['watch', 'sass']);

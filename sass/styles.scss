@@ -1,14 +1,21 @@
+/** FONT IMPORTS **/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+/** ZURB FOUNDATION **/
 @import "settings";
 @import "foundation";
 @include foundation-everything;
 
+/** Page Components **/
 @import "partials/header";
+@import "partials/main";
+@import "partials/footer";
 
-
-/** OVERRIDES **/
+/** Overrides **/
 
 body {
   background: $white;
+  font-family: 'Montserrat', sans-serif;
 }
 h1 {
 	color: $light-gray;
