@@ -1,15 +1,24 @@
 header {
   background-color: #323e48;
   position: fixed;
+  z-index: 999;
   width: 100%;
   height: 60px;
   top: 0;
+
+  @include breakpoint(medium down) {
+    width: 100vw;
+  }
 
   .grid-x {
     height: 100%;
 
     .cell {
       display: flex;
+
+      @include breakpoint(small down) {
+        justify-content: center;
+      }
     }
   }
   .logo {
@@ -21,6 +30,10 @@ header {
     align-self: center;
     margin-left: 2.5rem;
     
+    @include breakpoint(small down) {
+      margin: 0;
+    }
+
     a {
       display: block;
       width: 100%;

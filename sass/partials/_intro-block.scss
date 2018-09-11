@@ -1,0 +1,125 @@
+.intro-block {
+  background: rgb(31,31,31);
+  background: -moz-linear-gradient(top, 
+              rgba(31,31,31,1) 0%, 
+              rgba(31,31,31,1) 74%, 
+              rgba(31,31,31,1) 75%, 
+              rgba(120,120,120,1) 100%);
+  background: -webkit-linear-gradient(top, 
+              rgba(31,31,31,1) 0%,
+              rgba(31,31,31,1) 74%,
+              rgba(31,31,31,1) 75%,
+              rgba(120,120,120,1) 100%);
+  background: linear-gradient(to bottom, 
+            rgba(31,31,31,1) 0%,
+            rgba(31,31,31,1) 74%,
+            rgba(31,31,31,1) 75%,
+            rgba(120,120,120,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f1f1f', endColorstr='#787878',GradientType=0 );
+  height: 600px;
+
+  @include breakpoint(small down) {
+    height: auto;
+
+    .intro-txt, .buy-btns {
+      width: 50%;
+      float: left;
+    }
+    .intro-txt {
+      padding-right: 10px;
+    }
+    .buy-btns {
+      padding-left: 10px;
+    }
+  }
+
+  .grid-container {
+    height: 100%;
+    .grid-x {
+      height: 100%;
+      .cell {
+        height: 100%;
+        position: relative;
+      }
+    }
+  }
+  
+
+  h1 {
+    font-weight: 300;
+    margin-top: 20px;
+    font-size: 1.8rem;
+
+    @include breakpoint(small down) {
+      font-size: 1.2rem;
+    }
+  }
+
+  .buy-btn {
+    margin: 30px 0 0;
+    display: inline-block;
+
+    a {  
+      color: $white;
+      font-weight: 700;
+      padding: 10px 30px;
+      display: inline-block;
+      transition: .1s ease-in-out;
+      transition-property: color,background-color,background-position,border-color,box-shadow;
+
+      @include breakpoint(small down) {
+        padding: 10px 20px;
+      }
+
+      &.btn-wlmrt {
+        background-color: $product-rust;
+        &:hover {
+          background-color: $product-rust-hover;
+        }
+      }
+      &.btn-amzn {
+        background-color: $product-blue;
+        &:hover {
+          background-color: $product-blue-hover;
+        }
+      }
+    }
+  }
+
+  .devices {
+    height: 100%;
+    position: relative;
+
+    @include breakpoint(small down){
+      height: 500px;
+    }
+
+    .device {
+      position: absolute;
+      height: 90%;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      &.dblack {
+        background-image: url('../img/eic-full-black.png');
+        top: 40px;
+        left: 20%;
+
+        @include breakpoint(medium down) {
+          left: 0;
+        }
+      }
+      &.dsilver {
+        background-image: url('../img/eic-full-silver.png');
+        top: 50px;
+        left: calc(20% + 140px);
+
+        @include breakpoint(medium down) {
+          left: 140px;
+        }
+      }
+    }
+  }
+
+}
