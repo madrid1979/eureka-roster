@@ -44,6 +44,9 @@
 
         &.overlay {
           position: absolute;
+          z-index: 9;
+
+          @import "intro-visuals";
         }
       }
     }
@@ -98,6 +101,8 @@
     @include breakpoint(small down){
       height: 500px;
     }
+
+    @import "intro-highlights";
 
     .device {
       position: absolute;
