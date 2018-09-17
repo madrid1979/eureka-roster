@@ -37,9 +37,14 @@
     height: 100%;
     .grid-x {
       height: 100%;
+      position: relative;
       .cell {
         height: 100%;
         position: relative;
+
+        &.overlay {
+          position: absolute;
+        }
       }
     }
   }
@@ -120,6 +125,10 @@
         }
       }
     }
+  }
+
+  .overlay {
+    position: absolute;
   }
 
 }

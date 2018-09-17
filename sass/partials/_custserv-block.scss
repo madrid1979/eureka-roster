@@ -1,0 +1,46 @@
+.custserv-block {
+  height: 400px;
+  background-color: #186ca2;
+
+  .grid-container {
+    height: 100%;
+    .grid-x {
+      height: 100%;
+      position: relative;
+      .cell {
+        height: 100%;
+        position: relative;
+      }
+    }
+  }
+
+  h1 {
+    font-weight: 300;
+    margin-top: 20px;
+    font-size: 1.8rem;
+    display: inline-block;
+    color: $white;
+
+    @include breakpoint(small down) {
+      font-size: 1.2rem;
+    }
+  }
+  h2 {
+    font-weight: 300;
+    margin-top: 20px;
+    font-size: 1.4rem;
+    display: inline-block;
+    color: $white;
+
+    @include breakpoint(small down) {
+      font-size: 1.2rem;
+    }
+  }
+
+
+  .cleanbadge {
+    margin-top: 1rem;
+    height: 150px;
+    width: 150px;
+  }
+}

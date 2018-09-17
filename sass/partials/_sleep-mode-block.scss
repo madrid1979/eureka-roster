@@ -1,0 +1,30 @@
+@import 'stars';
+
+.sleepmode-block {
+  height: 600px;
+  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+  overflow: hidden;
+
+  .grid-container {
+    height: 100%;
+    .grid-x {
+      height: 100%;
+      position: relative;
+      .cell {
+        height: 100%;
+        position: relative;
+      }
+    }
+  }
+
+  h1 {
+    font-weight: 300;
+    margin-top: 20px;
+    font-size: 1.8rem;
+    color: $white;
+
+    @include breakpoint(small down) {
+      font-size: 1.2rem;
+    }
+  }
+}

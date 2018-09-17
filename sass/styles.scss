@@ -11,6 +11,11 @@
 @import "partials/main";
 
 @import "partials/intro-block";
+@import "partials/three-in-one-block";
+@import "partials/performance-block";
+@import "partials/sleep-mode-block";
+
+@import "partials/custserv-block";
 
 @import "partials/footer";
 
@@ -23,6 +28,9 @@ body {
 h1 {
   font-family: 'Montserrat', sans-serif;
 	color: $light-gray;
+}
+h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
 }
 
 .grid-padding-x {
