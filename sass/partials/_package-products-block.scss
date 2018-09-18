@@ -1,0 +1,139 @@
+.packaging-block {
+  overflow: hidden;
+
+  .grid-container {
+    height: 100%;
+    .grid-x {
+      height: 100%;
+      position: relative;
+      .cell {
+        height: 100%;
+        position: relative;
+      }
+    }
+  }
+
+  h1 {
+    font-weight: 300;
+    margin-top: 20px;
+    font-size: 1.8rem;
+    color: $product-blue;
+
+    @include breakpoint(small down) {
+      font-size: 1.2rem;
+    }
+  }
+
+  .packaging {
+    background-image: url('../img/retail-packaging.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 2rem;
+    height: 500px;
+  }
+
+  .productline {
+    height: 400px !important;
+    margin-bottom: 2rem;
+
+    .cell {
+      padding: 0 0.5rem;
+      display: flex;
+      flex-direction: column;
+
+      &:first-child {
+        padding-left: 0;
+      }
+      &:last-child {
+        padding-right: 0;
+      }
+
+      .eics {
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+      }
+      .black-noshadow {
+        background-image: url('../img/eic-black-noshadow.jpg');
+      }
+      .silver-noshadow {
+        background-image: url('../img/eic-silver-noshadow.jpg');
+      }
+      .instant-sense {
+        background-image: url('../img/instant-sense.jpg');
+      }
+    }
+
+    h3 {
+      font-size: 1rem;
+    }
+  }
+}
+
+.comparison-block {
+  overflow: hidden;
+
+  .grid-container {
+    height: 100%;
+    .grid-x {
+      height: 100%;
+      position: relative;
+      .cell {
+        height: 100%;
+        position: relative;
+      }
+    }
+  }
+
+  h1 {
+    font-weight: 300;
+    margin-top: 20px;
+    font-size: 1.8rem;
+    color: $product-blue;
+
+    @include breakpoint(small down) {
+      font-size: 1.2rem;
+    }
+  }
+  .comparison {
+    height: initial !important;
+
+    .comparison-table {
+      display: table;
+
+      td {
+        text-align: center;
+        img {
+          max-height: 100px;
+        }
+        p {
+          font-size: 0.75rem;
+        }
+        .redtxt {
+          color: red;
+        }
+        hr {
+          margin: 0.5rem auto;
+        }
+        .fa-check-circle {
+          font-size: 1.5rem;
+          color: green;
+        }
+        .fa-times-octagon {
+          font-size: 1.5rem;
+          color: red;
+        }
+      }
+
+      th {
+
+        span {
+          font-size: 0.65rem;
+          letter-spacing: 0.5px;
+        }
+      }
+    }
+  }
+}

@@ -1,7 +1,7 @@
 @import 'stars';
 
 .sleepmode-block {
-  height: 600px;
+  height: 500px;
   background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
   overflow: hidden;
 
@@ -19,7 +19,7 @@
 
   h1 {
     font-weight: 300;
-    margin-top: 20px;
+    margin-top: 5rem;
     font-size: 1.8rem;
     color: $white;
 
@@ -27,4 +27,56 @@
       font-size: 1.2rem;
     }
   }
+
+  .sleep-info {
+    top: -6px;
+
+    .sleep {
+      background-image: url('../img/sleep.jpg');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: relative;
+      margin-left: 2rem;
+      border-radius: 50%;
+      border: 8px solid $product-blue;
+      width: 350px;
+      height: 350px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    ul {
+      margin: 1rem 0 0 0;
+      list-style-type: none;
+
+      li {
+        color: $white;
+        font-size: 1.35rem;
+        margin-bottom: 1.25rem;
+      }
+    }
+    .brightdevice {
+      background-image: url('../img/brightdevice.png');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      margin-top: 1rem;
+      border-radius: 50%;
+      border: 2px solid $product-rust;
+      width: 90px;
+      height: 90px;
+
+      .fa-times {
+        color: $product-rust;
+        font-size: 2.5rem;
+        position: absolute;
+        top: 50px;
+        left: 5px;
+        text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+      }
+    }
+  }
+  
 }
