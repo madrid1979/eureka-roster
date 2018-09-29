@@ -14,9 +14,10 @@
   }
 
   h1 {
-    font-weight: 300;
+    font-weight: 700;
     margin-top: 20px;
     font-size: 1.8rem;
+    text-transform: uppercase;
     color: $product-blue;
 
     @include breakpoint(small down) {
@@ -29,7 +30,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
-    margin-top: 2rem;
+    margin: 2rem 0;
     height: 500px;
   }
 

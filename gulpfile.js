@@ -25,7 +25,7 @@ gulp.task('sass', function(){
 
 gulp.task('browserSync', function() {
   browserSync.init({
-      proxy: 'eureka.dev',
+      proxy: 'eureka.test',
   })
 });
 

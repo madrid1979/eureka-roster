@@ -1,9 +1,12 @@
-@import 'stars';
+/*@import 'stars';*/
 
 .sleepmode-block {
-  height: 500px;
-  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+  background-image: url('../img/sleep-mode.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);*/
   overflow: hidden;
+  padding-bottom: 47.6123%;
 
   .grid-container {
     height: 100%;
@@ -18,14 +21,18 @@
   }
 
   h1 {
-    font-weight: 300;
+    font-weight: 700;
     margin-top: 5rem;
-    font-size: 1.8rem;
-    color: $white;
+    font-size: 2.2rem;
+    color: $product-blue;
 
     @include breakpoint(small down) {
       font-size: 1.2rem;
     }
+  }
+  h3 {
+    color: $white;
+    font-size: 1.2rem;
   }
 
   .sleep-info {

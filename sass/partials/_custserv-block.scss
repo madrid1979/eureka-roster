@@ -1,5 +1,5 @@
 .custserv-block {
-  height: 400px;
+  height: 425px;
   background-color: #186ca2;
 
   .grid-container {
@@ -15,9 +15,10 @@
   }
 
   h1 {
-    font-weight: 300;
+    font-weight: 700;
     margin-top: 2rem;
-    font-size: 2.625rem;
+    font-size: 2.425rem;
+    text-transform: uppercase;
     display: inline-block;
     color: $white;
 
@@ -49,10 +50,11 @@
     text-align: center;
 
     .cell {
-      padding: 0 1rem !important;
-    }
-    img {
       height: 100px;
+      
+      img {
+        height: 100px;
+      }
     }
     p {
       color: $white;
