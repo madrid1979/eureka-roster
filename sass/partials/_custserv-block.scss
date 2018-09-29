@@ -1,5 +1,5 @@
 .custserv-block {
-  height: 425px;
+  height: 500px;
   background-color: #186ca2;
 
   .grid-container {
@@ -58,6 +58,39 @@
     }
     p {
       color: $white;
+      margin-bottom: 0;
+    }
+  }
+
+  .buy-btn {
+    margin: 30px 0 0;
+    display: inline-block;
+
+    a {  
+      color: $white;
+      font-weight: 700;
+      font-size: 0.8rem;
+      padding: 10px 10px;
+      display: inline-block;
+      transition: .1s ease-in-out;
+      transition-property: color,background-color,background-position,border-color,box-shadow;
+
+      @include breakpoint(small down) {
+        padding: 10px 20px;
+      }
+
+      &.btn-wlmrt {
+        background-color: $product-rust;
+        &:hover {
+          background-color: $product-rust-hover;
+        }
+      }
+      &.btn-amzn {
+        background-color: $product-blue;
+        &:hover {
+          background-color: $product-blue-hover;
+        }
+      }
     }
   }
 }

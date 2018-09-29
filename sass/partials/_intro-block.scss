@@ -45,6 +45,7 @@
         &.overlay {
           position: absolute;
           z-index: 9;
+          pointer-events: none;
 
           @import "intro-visuals";
         }

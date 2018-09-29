@@ -5820,7 +5820,8 @@ Refer to individual component partial style file
         position: relative; }
         .intro-block .grid-container .grid-x .cell.overlay {
           position: absolute;
-          z-index: 9; }
+          z-index: 9;
+          pointer-events: none; }
           .intro-block .grid-container .grid-x .cell.overlay .controls {
             position: absolute;
             left: 50%;
@@ -6324,7 +6325,7 @@ Refer to individual component partial style file
         letter-spacing: 0.5px; }
 
 .custserv-block {
-  height: 425px;
+  height: 500px;
   background-color: #186ca2; }
   .custserv-block .grid-container {
     height: 100%; }
@@ -6367,7 +6368,34 @@ Refer to individual component partial style file
       .custserv-block .filters .cell img {
         height: 100px; }
     .custserv-block .filters p {
-      color: #fefefe; }
+      color: #fefefe;
+      margin-bottom: 0; }
+  .custserv-block .buy-btn {
+    margin: 30px 0 0;
+    display: inline-block; }
+    .custserv-block .buy-btn a {
+      color: #fefefe;
+      font-weight: 700;
+      font-size: 0.8rem;
+      padding: 10px 10px;
+      display: inline-block;
+      -webkit-transition: .1s ease-in-out;
+      transition: .1s ease-in-out;
+      -webkit-transition-property: color,background-color,background-position,border-color,-webkit-box-shadow;
+      transition-property: color,background-color,background-position,border-color,-webkit-box-shadow;
+      transition-property: color,background-color,background-position,border-color,box-shadow;
+      transition-property: color,background-color,background-position,border-color,box-shadow,-webkit-box-shadow; }
+      @media screen and (max-width: 39.99875em) {
+        .custserv-block .buy-btn a {
+          padding: 10px 20px; } }
+      .custserv-block .buy-btn a.btn-wlmrt {
+        background-color: #9c7a70; }
+        .custserv-block .buy-btn a.btn-wlmrt:hover {
+          background-color: #493129; }
+      .custserv-block .buy-btn a.btn-amzn {
+        background-color: #49a5dd; }
+        .custserv-block .buy-btn a.btn-amzn:hover {
+          background-color: #00578a; }
 
 footer {
   background-color: #323e48;
