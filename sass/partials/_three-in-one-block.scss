@@ -17,11 +17,54 @@
   h1 {
     font-weight: 700;
     margin-top: 20px;
+    margin-bottom: 0;
     font-size: 1.8rem;
     color: $white;
 
     @include breakpoint(small down) {
       font-size: 1.2rem;
     }
+  }
+  p {
+    color: $white;
+
+    span {
+      font-size: 1.2rem;
+    }
+  }
+  table {
+    background: none;
+    border: none;
+    position: relative;
+    bottom: -100px;
+
+    thead, tbody, tfoot {
+      background: none;
+      border: none;
+    }
+
+    td {
+      text-align: center;
+      font-size: 0.875rem;
+    }
+  }
+
+  .uvled-tio2 {
+    background-image: url('../img/uvled-tio2.jpg');
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+  }
+  .true-hepa {
+    background-image: url('../img/true-hepa.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .pre-filter {
+    background-image: url('../img/pre-filter.jpg');
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
   }
 }

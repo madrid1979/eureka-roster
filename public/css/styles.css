@@ -6055,11 +6055,45 @@ Refer to individual component partial style file
   .threeinone-block h1 {
     font-weight: 700;
     margin-top: 20px;
+    margin-bottom: 0;
     font-size: 1.8rem;
     color: #fefefe; }
     @media screen and (max-width: 39.99875em) {
       .threeinone-block h1 {
         font-size: 1.2rem; } }
+  .threeinone-block p {
+    color: #fefefe; }
+    .threeinone-block p span {
+      font-size: 1.2rem; }
+  .threeinone-block table {
+    background: none;
+    border: none;
+    position: relative;
+    bottom: -100px; }
+    .threeinone-block table thead, .threeinone-block table tbody, .threeinone-block table tfoot {
+      background: none;
+      border: none; }
+    .threeinone-block table td {
+      text-align: center;
+      font-size: 0.875rem; }
+  .threeinone-block .uvled-tio2 {
+    background-image: url("../img/uvled-tio2.jpg");
+    -webkit-background-size: cover;
+            background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat; }
+  .threeinone-block .true-hepa {
+    background-image: url("../img/true-hepa.jpg");
+    -webkit-background-size: cover;
+            background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; }
+  .threeinone-block .pre-filter {
+    background-image: url("../img/pre-filter.jpg");
+    -webkit-background-size: cover;
+            background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat; }
 
 .performance-block {
   /*background: rgb(88, 88, 88);*/
