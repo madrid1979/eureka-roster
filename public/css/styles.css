@@ -6144,6 +6144,8 @@ Refer to individual component partial style file
     color: #fefefe; }
   .performance-block .caption2 {
     margin-left: 2rem; }
+    .performance-block .caption2 h1, .performance-block .caption2 h3 {
+      text-align: right; }
   .performance-block .aham {
     background-image: url("../img/aham-verifide.gif");
     background-repeat: no-repeat;
