@@ -8,6 +8,7 @@
     
     <title>Eureka Instant Clear Air Purifier</title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-9ralMzdK1QYsk4yBY680hmsb4/hJ98xK3w0TIaJ3ll4POWpWUYaA2bRjGGujGT8w" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/vendor/lity.min.css">
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/styles.css">
   </head>
@@ -121,10 +122,16 @@
       <div class="video-block">
         <div class="grid-container">
           <div class="grid-x grid-padding-x">
-            <div class="large-6 cell">
+            <div class="large-6 cell brand-vid">
+              <h1>BRAND VIDEO</h1>
+              <a href="#brand" data-lity><i class="fas fa-play-circle"></i></a>
+              <div id="brand" class="lity-hide">Brand Vid content</div>
             </div>
-            <div class="large-6 cell">
-              </div>
+            <div class="large-6 cell viral-vid">
+              <h1>VIRAL VIDEO</h1>
+              <a href="#viral" data-lity><i class="fas fa-play-circle"></i></a>
+              <div id="viral" class="lity-hide">Viral Vid content</div>
+            </div>
           </div>
         </div>
       </div>
@@ -369,6 +376,7 @@
     </footer>
 
     <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/lity.min.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
     <script src="js/app.js"></script>
