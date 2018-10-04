@@ -19,7 +19,6 @@
     margin-top: 2rem;
     font-size: 2.425rem;
     text-transform: uppercase;
-    display: inline-block;
     color: $white;
 
     @include breakpoint(small down) {
@@ -29,7 +28,6 @@
   h2 {
     font-weight: 300;
     font-size: 1.4rem;
-    display: inline-block;
     color: $white;
 
     @include breakpoint(small down) {

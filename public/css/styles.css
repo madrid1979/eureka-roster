@@ -5800,6 +5800,10 @@ Refer to individual component partial style file
   background: linear-gradient(to bottom, #1f1f1f 0%, #1f1f1f 74%, #1f1f1f 75%, #787878 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f1f1f', endColorstr='#787878',GradientType=0 );
   height: 600px; }
+  .intro-block .intro-txt {
+    padding: 2rem 0 0 2rem; }
+  .intro-block .buy-btns {
+    padding-left: 2rem; }
   @media screen and (max-width: 39.99875em) {
     .intro-block {
       height: auto; }
@@ -5825,7 +5829,7 @@ Refer to individual component partial style file
           .intro-block .grid-container .grid-x .cell.overlay .controls {
             position: absolute;
             left: 50%;
-            top: 2rem;
+            top: 5rem;
             -webkit-transform: translateX(-50%);
                 -ms-transform: translateX(-50%);
                     transform: translateX(-50%);
@@ -5984,15 +5988,15 @@ Refer to individual component partial style file
 
 @-webkit-keyframes pulse-ring {
   0% {
-    -webkit-transform: scale(0.25);
-            transform: scale(0.25); }
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5); }
   80%, 100% {
     opacity: 0; } }
 
 @keyframes pulse-ring {
   0% {
-    -webkit-transform: scale(0.25);
-            transform: scale(0.25); }
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5); }
   80%, 100% {
     opacity: 0; } }
 
@@ -6114,7 +6118,7 @@ Refer to individual component partial style file
           height: 100%;
           left: 0;
           top: 0;
-          font-size: 8rem; }
+          font-size: 6rem; }
           .video-block .grid-container .grid-x .cell a i {
             position: absolute;
             top: 50%;
@@ -6124,7 +6128,7 @@ Refer to individual component partial style file
                     transform: translate(-50%, -50%); }
   .video-block h1 {
     font-weight: 700;
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     color: #49a5dd; }
     @media screen and (max-width: 39.99875em) {
       .video-block h1 {
@@ -6137,11 +6141,26 @@ Refer to individual component partial style file
     background-position: center center;
     -webkit-background-size: cover;
             background-size: cover; }
+    .video-block .brand-vid h1 {
+      color: #fefefe; }
   .video-block .viral-vid {
     background-image: url("../img/eureka-viralvideo.jpg");
     background-position: center center;
     -webkit-background-size: cover;
             background-size: cover; }
+    .video-block .viral-vid h1 {
+      color: #fefefe; }
+
+#viral {
+  background-color: #000;
+  padding: 10px;
+  color: #fefefe; }
+
+video {
+  max-width: 1073px;
+  max-height: 604px;
+  width: 100%;
+  height: 100%; }
 
 .performance-block {
   /*background: rgb(88, 88, 88);*/
@@ -6424,7 +6443,6 @@ Refer to individual component partial style file
     margin-top: 2rem;
     font-size: 2.425rem;
     text-transform: uppercase;
-    display: inline-block;
     color: #fefefe; }
     @media screen and (max-width: 39.99875em) {
       .custserv-block h1 {
@@ -6432,7 +6450,6 @@ Refer to individual component partial style file
   .custserv-block h2 {
     font-weight: 300;
     font-size: 1.4rem;
-    display: inline-block;
     color: #fefefe; }
     @media screen and (max-width: 39.99875em) {
       .custserv-block h2 {

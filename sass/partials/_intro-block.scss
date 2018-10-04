@@ -18,6 +18,13 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f1f1f', endColorstr='#787878',GradientType=0 );
   height: 600px;
 
+  .intro-txt {
+    padding: 2rem 0 0 2rem;
+  }
+  .buy-btns {
+    padding-left: 2rem;
+  }
+
   @include breakpoint(small down) {
     height: auto;
 
