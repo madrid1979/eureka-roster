@@ -48,6 +48,9 @@
     @include breakpoint(medium down){
       left: 40%;
     }
+    @include breakpoint(small down){
+      left: 50%;
+    }
   }
   &.option-2 {
     left: 30%;

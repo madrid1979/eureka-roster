@@ -5804,16 +5804,20 @@ Refer to individual component partial style file
     padding: 2rem 0 0 2rem; }
   .intro-block .buy-btns {
     padding-left: 2rem; }
+  @media screen and (max-width: 63.99875em) {
+    .intro-block .intro-txt, .intro-block .buy-btns {
+      padding-left: 0; } }
   @media screen and (max-width: 39.99875em) {
     .intro-block {
       height: auto; }
       .intro-block .intro-txt, .intro-block .buy-btns {
-        width: 50%;
+        width: 100%;
         float: left; }
       .intro-block .intro-txt {
+        padding-top: 0;
         padding-right: 10px; }
       .intro-block .buy-btns {
-        padding-left: 10px; } }
+        padding-left: 0px; } }
   .intro-block .grid-container {
     height: 100%; }
     .intro-block .grid-container .grid-x {
@@ -5898,7 +5902,7 @@ Refer to individual component partial style file
     font-size: 1.8rem; }
     @media screen and (max-width: 39.99875em) {
       .intro-block h1 {
-        font-size: 1.2rem; } }
+        font-size: 2rem; } }
   .intro-block .buy-btn {
     margin: 30px 0 0;
     display: inline-block; }
@@ -5929,7 +5933,7 @@ Refer to individual component partial style file
     position: relative; }
     @media screen and (max-width: 39.99875em) {
       .intro-block .devices {
-        height: 500px; } }
+        height: 450px; } }
     .intro-block .devices .highlights {
       position: absolute;
       width: 30px;
@@ -5979,6 +5983,9 @@ Refer to individual component partial style file
         @media screen and (max-width: 63.99875em) {
           .intro-block .devices .highlights.option-1 {
             left: 40%; } }
+        @media screen and (max-width: 39.99875em) {
+          .intro-block .devices .highlights.option-1 {
+            left: 50%; } }
       .intro-block .devices .highlights.option-2 {
         left: 30%;
         top: 50%;
@@ -6035,6 +6042,9 @@ Refer to individual component partial style file
         @media screen and (max-width: 63.99875em) {
           .intro-block .devices .device.dblack {
             left: 0; } }
+        @media screen and (max-width: 39.99875em) {
+          .intro-block .devices .device.dblack {
+            left: 10%; } }
       .intro-block .devices .device.dsilver {
         background-image: url("../img/eic-full-silver.png");
         top: 50px;
@@ -6042,12 +6052,18 @@ Refer to individual component partial style file
         @media screen and (max-width: 63.99875em) {
           .intro-block .devices .device.dsilver {
             left: 140px; } }
+        @media screen and (max-width: 39.99875em) {
+          .intro-block .devices .device.dsilver {
+            left: 45%; } }
   .intro-block .overlay {
     position: absolute; }
 
 .threeinone-block {
   height: 400px;
   background-color: #202022; }
+  @media screen and (max-width: 63.99875em) {
+    .threeinone-block {
+      height: auto; } }
   .threeinone-block .grid-container {
     height: 100%; }
     .threeinone-block .grid-container .grid-x {
@@ -6074,35 +6090,84 @@ Refer to individual component partial style file
     border: none;
     position: relative;
     bottom: -100px; }
+    @media screen and (max-width: 63.99875em) {
+      .threeinone-block table {
+        bottom: -130px;
+        width: 75%;
+        margin: auto; } }
+    @media screen and (max-width: 39.99875em) {
+      .threeinone-block table {
+        bottom: -50px;
+        width: 100%; } }
     .threeinone-block table thead, .threeinone-block table tbody, .threeinone-block table tfoot {
       background: none;
       border: none; }
     .threeinone-block table td {
       text-align: center;
       font-size: 0.875rem; }
+      @media screen and (max-width: 63.99875em) {
+        .threeinone-block table td img {
+          height: 33%;
+          max-width: initial; } }
+      @media screen and (max-width: 39.99875em) {
+        .threeinone-block table td img {
+          max-height: 20%;
+          max-width: initial; } }
+      .threeinone-block table td p {
+        margin: 0; }
   .threeinone-block .uvled-tio2 {
     background-image: url("../img/uvled-tio2.jpg");
     -webkit-background-size: cover;
             background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat; }
+    @media screen and (max-width: 63.99875em) {
+      .threeinone-block .uvled-tio2 {
+        height: 300px !important;
+        -webkit-background-size: 55% 55%;
+                background-size: 55%;
+        background-position-x: right;
+        background-position-y: bottom; } }
+    @media screen and (max-width: 39.99875em) {
+      .threeinone-block .uvled-tio2 {
+        height: 200px !important;
+        background-position-y: -30px; }
+        .threeinone-block .uvled-tio2 p {
+          width: 50%; } }
   .threeinone-block .true-hepa {
     background-image: url("../img/true-hepa.jpg");
     -webkit-background-size: cover;
             background-size: cover;
     background-position: center center;
     background-repeat: no-repeat; }
+    @media screen and (max-width: 63.99875em) {
+      .threeinone-block .true-hepa {
+        height: 400px !important; } }
+    @media screen and (max-width: 39.99875em) {
+      .threeinone-block .true-hepa {
+        height: 300px !important; } }
   .threeinone-block .pre-filter {
     background-image: url("../img/pre-filter.jpg");
     -webkit-background-size: cover;
             background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat; }
+    @media screen and (max-width: 63.99875em) {
+      .threeinone-block .pre-filter {
+        height: 300px !important;
+        -webkit-background-size: contain;
+                background-size: contain; } }
 
 .video-block {
   height: 400px;
   padding: 30px 0;
   background-color: #000; }
+  @media screen and (max-width: 63.99875em) {
+    .video-block {
+      height: 300px; } }
+  @media screen and (max-width: 39.99875em) {
+    .video-block {
+      height: 200px; } }
   .video-block .grid-container {
     height: 100%; }
     .video-block .grid-container .grid-x {
@@ -6119,6 +6184,12 @@ Refer to individual component partial style file
           left: 0;
           top: 0;
           font-size: 6rem; }
+          @media screen and (max-width: 63.99875em) {
+            .video-block .grid-container .grid-x .cell a {
+              font-size: 4rem; } }
+          @media screen and (max-width: 39.99875em) {
+            .video-block .grid-container .grid-x .cell a {
+              font-size: 3rem; } }
           .video-block .grid-container .grid-x .cell a i {
             position: absolute;
             top: 50%;
@@ -6141,15 +6212,11 @@ Refer to individual component partial style file
     background-position: center center;
     -webkit-background-size: cover;
             background-size: cover; }
-    .video-block .brand-vid h1 {
-      color: #fefefe; }
   .video-block .viral-vid {
     background-image: url("../img/eureka-viralvideo.jpg");
     background-position: center center;
     -webkit-background-size: cover;
             background-size: cover; }
-    .video-block .viral-vid h1 {
-      color: #fefefe; }
 
 #viral {
   background-color: #000;
@@ -6163,32 +6230,19 @@ video {
   height: 100%; }
 
 .performance-block {
-  /*background: rgb(88, 88, 88);*/
   background-color: #574a48;
   background-image: url("../img/med-large_room.jpg");
   background-position: center bottom;
   background-repeat: no-repeat;
   -webkit-background-size: contain;
           background-size: contain;
-  /*
-  background: -moz-linear-gradient(top, 
-              rgba(12,81,68,1) 0%, 
-              rgba(12,81,68,1) 74%, 
-              rgba(12,81,68,1) 75%, 
-              rgba(8,53,45,1) 100%);
-  background: -webkit-linear-gradient(top, 
-              rgba(12,81,68,1) 0%,
-              rgba(12,81,68,1) 74%,
-              rgba(12,81,68,1) 75%,
-              rgba(8,53,45,1) 100%);
-  background: linear-gradient(to bottom, 
-            rgba(12,81,68,1) 0%,
-            rgba(12,81,68,1) 74%,
-            rgba(12,81,68,1) 75%,
-            rgba(8,53,45,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0c5144', endColorstr='#08352d',GradientType=0 );
-  */
   height: 1300px; }
+  @media screen and (max-width: 63.99875em) {
+    .performance-block {
+      height: 850px; } }
+  @media screen and (max-width: 39.99875em) {
+    .performance-block {
+      height: 550px; } }
   .performance-block .grid-container {
     height: 100%; }
     .performance-block .grid-container .grid-x {
@@ -6209,10 +6263,19 @@ video {
     font-weight: 300;
     font-size: 1.4rem;
     color: #fefefe; }
+    @media screen and (max-width: 39.99875em) {
+      .performance-block h3 {
+        font-size: 1.2rem;
+        width: 60%; } }
   .performance-block .caption2 {
     margin-left: 2rem; }
     .performance-block .caption2 h1, .performance-block .caption2 h3 {
       text-align: right; }
+    .performance-block .caption2 h1 {
+      margin: 0; }
+    .performance-block .caption2 h3 {
+      width: 100%;
+      font-size: 1.2rem; }
   .performance-block .aham {
     background-image: url("../img/aham-verifide.gif");
     background-repeat: no-repeat;
@@ -6223,6 +6286,16 @@ video {
     position: absolute;
     top: -1rem;
     right: 0rem; }
+    @media screen and (max-width: 63.99875em) {
+      .performance-block .aham {
+        top: -6rem;
+        height: 180px;
+        width: 180px; } }
+    @media screen and (max-width: 39.99875em) {
+      .performance-block .aham {
+        top: -8rem;
+        height: 120px;
+        width: 120px; } }
   .performance-block .wireframe {
     background-image: url("../img/performance.png");
     background-position: center center;
@@ -6233,6 +6306,12 @@ video {
     width: 100%;
     height: 100%;
     max-height: 500px; }
+    @media screen and (max-width: 63.99875em) {
+      .performance-block .wireframe {
+        height: 300px; } }
+    @media screen and (max-width: 39.99875em) {
+      .performance-block .wireframe {
+        height: 130px; } }
     .performance-block .wireframe .iconBlock {
       position: relative;
       float: right;
@@ -6260,6 +6339,9 @@ video {
   /*background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);*/
   overflow: hidden;
   padding-bottom: 47.6123%; }
+  @media screen and (max-width: 63.99875em) {
+    .sleepmode-block {
+      padding-bottom: 45%; } }
   .sleepmode-block .grid-container {
     height: 100%; }
     .sleepmode-block .grid-container .grid-x {
@@ -6273,6 +6355,9 @@ video {
     margin-top: 5rem;
     font-size: 2.2rem;
     color: #49a5dd; }
+    @media screen and (max-width: 63.99875em) {
+      .sleepmode-block h1 {
+        margin-top: 2rem; } }
     @media screen and (max-width: 39.99875em) {
       .sleepmode-block h1 {
         font-size: 1.2rem; } }
@@ -6351,9 +6436,19 @@ video {
             background-size: contain;
     margin: 2rem 0;
     height: 500px; }
+    @media screen and (max-width: 63.99875em) {
+      .packaging-block .packaging {
+        height: 230px;
+        margin: 2rem 0 0 0; } }
   .packaging-block .productline {
     height: 400px !important;
     margin-bottom: 2rem; }
+    @media screen and (max-width: 63.99875em) {
+      .packaging-block .productline {
+        height: 200px !important; } }
+    @media screen and (max-width: 39.99875em) {
+      .packaging-block .productline {
+        height: auto !important; } }
     .packaging-block .productline .cell {
       padding: 0 0.5rem;
       display: -webkit-box;
@@ -6375,6 +6470,9 @@ video {
         background-position: center center;
         -webkit-background-size: contain;
                 background-size: contain; }
+        @media screen and (max-width: 63.99875em) {
+          .packaging-block .productline .cell .eics {
+            height: 150px; } }
       .packaging-block .productline .cell .black-noshadow {
         background-image: url("../img/eic-black-noshadow.jpg"); }
       .packaging-block .productline .cell .silver-noshadow {
@@ -6430,14 +6528,41 @@ video {
 .custserv-block {
   height: 500px;
   background-color: #186ca2; }
+  @media screen and (max-width: 39.99875em) {
+    .custserv-block {
+      height: auto; } }
   .custserv-block .grid-container {
     height: 100%; }
     .custserv-block .grid-container .grid-x {
       height: 100%;
       position: relative; }
+      @media screen and (max-width: 63.99875em) {
+        .custserv-block .grid-container .grid-x {
+          height: auto; } }
       .custserv-block .grid-container .grid-x .cell {
         height: 100%;
         position: relative; }
+        @media screen and (max-width: 63.99875em) {
+          .custserv-block .grid-container .grid-x .cell {
+            height: auto; } }
+      @media screen and (max-width: 63.99875em) {
+        .custserv-block .grid-container .grid-x.filters .cell:first-child {
+          padding-left: 0; }
+        .custserv-block .grid-container .grid-x.filters .cell:nth-child(2) {
+          padding: 0; }
+        .custserv-block .grid-container .grid-x.filters .cell:last-child {
+          padding-right: 0; } }
+      @media screen and (max-width: 39.99875em) {
+        .custserv-block .grid-container .grid-x.filters .cell:first-child {
+          padding-right: 0.5rem; }
+        .custserv-block .grid-container .grid-x.filters .cell:nth-child(2) {
+          padding-left: 0.5rem; }
+        .custserv-block .grid-container .grid-x.filters .cell:last-child {
+          padding: 0; }
+          .custserv-block .grid-container .grid-x.filters .cell:last-child p {
+            margin-bottom: 1rem; }
+        .custserv-block .grid-container .grid-x.filters .cell p {
+          font-size: 0.75rem; } }
   .custserv-block h1 {
     font-weight: 700;
     margin-top: 2rem;
@@ -6474,6 +6599,9 @@ video {
   .custserv-block .buy-btn {
     margin: 30px 0 0;
     display: inline-block; }
+    @media screen and (max-width: 39.99875em) {
+      .custserv-block .buy-btn {
+        margin-bottom: 1rem; } }
     .custserv-block .buy-btn a {
       color: #fefefe;
       font-weight: 700;

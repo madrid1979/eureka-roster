@@ -2,6 +2,10 @@
   height: 400px;
   background-color: #202022;
 
+  @include breakpoint(medium down){
+    height: auto;
+  }
+
   .grid-container {
     height: 100%;
     .grid-x {
@@ -38,6 +42,16 @@
     position: relative;
     bottom: -100px;
 
+    @include breakpoint(medium down){
+      bottom: -130px;
+      width: 75%;
+      margin: auto;
+    }
+    @include breakpoint(small down){
+      bottom: -50px;
+      width: 100%;
+    }
+
     thead, tbody, tfoot {
       background: none;
       border: none;
@@ -46,6 +60,20 @@
     td {
       text-align: center;
       font-size: 0.875rem;
+
+      img {
+        @include breakpoint(medium down){
+          height: 33%;
+          max-width: initial;
+        }
+        @include breakpoint(small down){
+          max-height: 20%;
+          max-width: initial;
+        }
+      }
+      p {
+        margin: 0;
+      }
     }
   }
 
@@ -54,17 +82,44 @@
     background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
+
+    @include breakpoint(medium down){
+      height: 300px !important;
+      background-size: 55%;
+      background-position-x: right;
+      background-position-y: bottom;
+    }
+    @include breakpoint(small down){
+      height: 200px !important;
+      background-position-y: -30px;
+
+      p {
+        width: 50%;
+      }
+    }
   }
   .true-hepa {
     background-image: url('../img/true-hepa.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+
+    @include breakpoint(medium down){
+      height: 400px !important;
+    }
+    @include breakpoint(small down){
+      height: 300px !important;
+    }
   }
   .pre-filter {
     background-image: url('../img/pre-filter.jpg');
     background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
+
+    @include breakpoint(medium down){
+      height: 300px !important;
+      background-size: contain;
+    }
   }
 }

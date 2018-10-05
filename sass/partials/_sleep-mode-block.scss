@@ -8,6 +8,10 @@
   overflow: hidden;
   padding-bottom: 47.6123%;
 
+  @include breakpoint(medium down){
+    padding-bottom: 45%;
+  }
+
   .grid-container {
     height: 100%;
     .grid-x {
@@ -26,8 +30,11 @@
     font-size: 2.2rem;
     color: $product-blue;
     
+    @include breakpoint(medium down){
+      margin-top: 2rem;
+    }
 
-    @include breakpoint(small down) {
+    @include breakpoint(small down){
       font-size: 1.2rem;
     }
   }

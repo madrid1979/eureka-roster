@@ -32,11 +32,23 @@
     background-size: contain;
     margin: 2rem 0;
     height: 500px;
+
+    @include breakpoint(medium down){
+      height: 230px;
+      margin: 2rem 0 0 0;
+    }
   }
 
   .productline {
     height: 400px !important;
     margin-bottom: 2rem;
+
+    @include breakpoint(medium down){
+      height: 200px !important;
+    }
+    @include breakpoint(small down){
+      height: auto !important;
+    }
 
     .cell {
       padding: 0 0.5rem;
@@ -55,6 +67,10 @@
         background-repeat: no-repeat;
         background-position: center center;
         background-size: contain;
+
+        @include breakpoint(medium down){
+          height: 150px;
+        }
       }
       .black-noshadow {
         background-image: url('../img/eic-black-noshadow.jpg');

@@ -2,14 +2,60 @@
   height: 500px;
   background-color: #186ca2;
 
+  @include breakpoint(small down){
+    height: auto;
+  }
+
   .grid-container {
     height: 100%;
     .grid-x {
       height: 100%;
       position: relative;
+
+      @include breakpoint(medium down){
+        height: auto;
+      }
       .cell {
         height: 100%;
         position: relative;
+
+        @include breakpoint(medium down){
+          height: auto;
+        }
+      }
+
+      &.filters {
+        .cell {
+          @include breakpoint(medium down){
+            &:first-child {
+              padding-left: 0;
+            }
+            &:nth-child(2){
+              padding: 0;
+            }
+            &:last-child {
+              padding-right: 0;
+            }
+          }
+          @include breakpoint(small down){
+            &:first-child {
+              padding-right: 0.5rem;
+            }
+            &:nth-child(2){
+              padding-left: 0.5rem;
+            }
+            &:last-child {
+              padding: 0;
+
+              p {
+                margin-bottom: 1rem;
+              }
+            }
+            p {
+              font-size: 0.75rem;
+            }
+          }
+        }
       }
     }
   }
@@ -63,6 +109,10 @@
   .buy-btn {
     margin: 30px 0 0;
     display: inline-block;
+
+    @include breakpoint(small down){
+      margin-bottom: 1rem;
+    }
 
     a {  
       color: $white;
